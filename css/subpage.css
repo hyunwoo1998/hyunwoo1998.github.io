@@ -1,0 +1,377 @@
+@charset "utf-8";
+@import url(/css/font.css);
+
+a {
+    padding: 0 1rem .2rem;
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.4);
+    transition: all .2s ease-out;
+}
+
+a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rem;
+}
+
+img {
+    max-width: 46rem;
+}
+
+#melon img {
+    max-width: 54rem;
+}
+
+#burger-king section:nth-child(odd) {
+    background: #f5cca4;
+}
+
+#melon section:nth-child(odd) {
+    background: #a8ffa0;
+}
+
+#quiz-cat section:nth-child(odd) {
+    background: #d2d2d2;
+}
+
+#paris-baguette section:nth-child(odd) {
+    background: #8d88ce;
+}
+
+#kspo section:nth-child(odd) {
+    background: #65ABE0;
+}
+
+#paik-hospital section:nth-child(odd) {
+    background: #b0dde4;
+}
+
+/* 섹션1 */
+.s1-text {
+    position: relative;
+    bottom: 3rem;
+    margin-left: 2rem;
+}
+
+#burger-king .s1-text>h1 {
+    font-family: 'yg-jalnan';
+}
+
+#melon .s1-text>h1 {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+#quiz-cat .s1-text>h1 {
+    font-family: 'ONE-Mobile-Title';
+}
+
+.s1-text>h2 {
+    margin: 2rem 0;
+}
+
+.btn-group {
+    margin-top: 3rem;
+}
+
+.btn {
+    padding: .5rem 2rem 1rem;
+    margin-right: .5rem;
+    border: 1px solid black;
+    border-radius: .6rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition: all .2s ease-out;
+}
+
+.btn:active {
+    border-color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.3);
+    transform: scale(.98);
+}
+
+#burger-king .btn {
+    box-shadow: inset 0 -2px 3px 1px #9a3316;
+    background: #e47b36;
+}
+
+#burger-king .btn:active {
+    box-shadow: inset 0 1px 4px 2px #9a3316;
+    background: #c2692f;
+}
+
+#melon .btn {
+    box-shadow: inset 0 -2px 3px 1px #00ad34;
+    background: #58ff4d;
+}
+
+#melon .btn:active {
+    box-shadow: inset 0 1px 4px 2px #00ad34;
+    background: #68ed5e;
+}
+
+#quiz-cat .btn {
+    box-shadow: inset 0 -2px 3px 1px #5a5a5a;
+    background: #a0a0a0;
+}
+
+#quiz-cat .btn:active {
+    box-shadow: inset 0 1px 4px 2px #5a5a5a;
+    background: #888;
+}
+
+#paris-baguette .btn {
+    box-shadow: inset 0 -2px 3px 1px #023586;
+    background: rgba(2, 53, 134, 0.3);
+}
+
+#paris-baguette .btn:active {
+    box-shadow: inset 0 1px 4px 2px #023586;
+    background: rgba(2, 53, 134, 0.6);
+}
+
+#kspo .btn {
+    box-shadow: inset 0 -2px 3px 1px #004288;
+    background: #0073ee;
+}
+
+#kspo .btn:active {
+    box-shadow: inset 0 1px 4px 2px #004288;
+    background: #0565cc;
+}
+
+#paik-hospital .btn {
+    box-shadow: inset 0 -2px 3px 1px #01b9b7;
+    background: rgba(1, 185, 182, 0.3);
+}
+
+#paik-hospital .btn:active {
+    box-shadow: inset 0 1px 4px 2px #01b9b7;
+    background: rgba(1, 185, 182, 0.6);
+}
+
+/* 섹션2 */
+.s2-table {
+    display: table;
+    table-layout: fixed;
+    width: 85rem;
+}
+
+.s2-table>ul {
+    display: table-row;
+    height: 19rem;
+}
+
+.s2-table>ul>li {
+    display: table-cell;
+    vertical-align: top;
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.s2-table h3 {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    background: black;
+    width: 26rem;
+    color: white;
+    padding: .5rem 0 1rem;
+    user-select: none;
+}
+
+.s2-table h3::before {
+    content: "";
+    background: black;
+}
+
+.s2-font>ul>li {
+    font-size: 2rem;
+    margin: 1.8rem 0;
+    letter-spacing: .1rem;
+}
+
+.burger-font1>a {
+    font-family: 'yg-jalnan';
+
+}
+
+.burger-font2>a {
+    font-family: 'NanumSquareRound';
+    font-weight: 700;
+}
+
+.melon-font>a {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 700;
+}
+
+.quiz-font1>a {
+    font-family: 'ONE-Mobile-Title';
+}
+
+.quiz-font2>a {
+    font-family: 'ONE-Mobile-Regular';
+}
+
+.paris-font1>a {
+    font-family: 'GmarketSansBold';
+}
+
+.paris-font2>a {
+    font-family: 'GmarketSansMedium';
+}
+
+.kspo-font>a {
+    font-family: 'Pretendard-Regular';
+}
+
+.hospital-font>a {
+    font-family: 'Pretendard-Regular';
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.color {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 2rem .5rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    transition: all .2s ease;
+}
+
+.color:hover {
+    transform: scale(1.2);
+}
+
+.burger-color1 .color {
+    background: #e47b36;
+}
+
+.burger-color2 .color {
+    background: #9a3316;
+}
+
+.burger-color3 .color {
+    background: white;
+}
+
+.melon-color1 .color {
+    background: #00CE39;
+}
+
+.melon-color2 .color {
+    background: #888888;
+}
+
+.melon-color3 .color {
+    background: #DFE6E8;
+}
+
+.quiz-color1 .color {
+    background: #334257;
+}
+
+.quiz-color2 .color {
+    background: #476072;
+}
+
+.quiz-color3 .color {
+    background: #548CA8;
+}
+
+.paris-color1 .color {
+    background: #023586;
+}
+
+.paris-color2 .color {
+    background: #ffffff;
+}
+
+.paris-color3 .color {
+    background: #000000;
+}
+
+.kspo-color1 .color {
+    background: #004288;
+}
+
+.kspo-color2 .color {
+    background: #ffffff;
+}
+
+.kspo-color3 .color {
+    background: #000000;
+}
+
+.hospital-color1 .color {
+    background: #2a629d;
+}
+
+.hospital-color2 .color {
+    background: #74777a;
+}
+
+.hospital-color3 .color {
+    background: #ced2d6;
+}
+
+.list span {
+    font-size: 1.5rem;
+}
+
+.s2-etc>ul>li {
+    font-size: 2.1rem;
+    margin: 1.8rem 0;
+}
+
+/* 섹션3 */
+.s3-text {
+    position: relative;
+    bottom: 2rem;
+    margin-left: 2rem;
+}
+
+.s3-text h2 {
+    margin-bottom: 2rem;
+}
+
+.s3-text>ul {
+    font-size: 2rem;
+}
+
+.s3-text>ul>li {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.s3-text strong {
+    min-width: 10rem;
+}

@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="./img/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <article id="loading">
+        <img src="./img/icon.png" class="loading-img" alt="loading-img">
+        <p class="loading-text"></p>
+        <div id="loading-bar">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <span>로딩 종료까지 <strong>5</strong>초…</span>
+        <h1>본 사이트는 PC에 최적화되어있으며,<br>
+            상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</h1>
+    </article>
+    <main>
+        <div id="intro">
+            <div class="intro-box">
+                <span class="intro-text">
+                    제 포트폴리오를 보러 와주셔서 감사합니다!<br>
+                    본 사이트는 <strong>Windows XP</strong>를 참고해서 만든<br>
+                    개인 포트폴리오용 사이트입니다.<br>
+                    대부분의 클릭 이벤트는 구현되어있으며,<br>
+                    바탕화면 아이콘이나 클릭 후의 창은<br>
+                    jQuery가 적용되어서 드래그가 가능합니다.<br>
+                    느긋하게 감상해주세요!
+                </span>
+            </div>
+            <img src="./img/dog_img.png" id="intro-dog" alt="dog">
+        </div>
+        <div id="project-icon" class="main-icon">
+            <img class="icon-img" src="./img/project_img.png" alt="project-img">
+            <a class="icon-text">프로젝트</a>
+        </div>
+        <div id="skill-icon" class="main-icon">
+            <img class="icon-img" src="./img/skill_img.png" alt="skill-img">
+            <a class="icon-text">스킬</a>
+        </div>
+        <div id="skill-screen" class="screen">
+            <div class="screen-title">
+                <div class="title-group">
+                    <img src="./img/skill_img.png" alt="skill-img">
+                    <span class="title-text">스킬</span>
+                </div>
+                <div class="btn-group">
+                    <button id="skill-min" class="screen-btn">
+                        <i class="fa-regular fa-window-minimize"></i>
+                    </button>
+                    <button id="skill-max" class="screen-btn btn-disabled">
+                        <i class="fa-regular fa-window-maximize"></i>
+                    </button>
+                    <button id="skill-close" class="screen-btn close-btn">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="screen-frame">
+                <div class="screen-menu">
+                    <ul class="menu-list">
+                        <li>파일(<span>F</span>)</li>
+                        <li>편집(<span>E</span>)</li>
+                        <li>보기(<span>V</span>)</li>
+                        <li>즐겨찾기(<span>A</span>)</li>
+                        <li>도구(<span>T</span>)</li>
+                        <li>도움말(<span>H</span>)</li>
+                    </ul>
+                </div>
+                <div class="screen-main">
+                    <div class="skill-content">
+                        <div class="skill-list">
+                            <h2 class="skill-title">HTML·CSS·JS</h2>
+                            <ul>
+                                <li class="skill-img" data-tab="detail-1">
+                                    <img src="./img/skill/html.png" alt="HTML">
+                                    <span>HTML</span>
+                                </li>
+                                <li class="skill-img" data-tab="detail-1">
+                                    <img src="./img/skill/css.png" alt="CSS">
+                                    <span>CSS</span>
+                                </li>
+                                <li class="skill-img" data-tab="detail-1">
+                                    <img src="./img/skill/js.png" alt="JS">
+                                    <span>JavaScript</span>
+                                </li>
+                            </ul>
+                            <div id="detail-1" class="skill-detail">
+                                <div class="detail-back">
+                                    <button class="back-btn">
+                                        <i class="fa-solid fa-rotate-left"></i>
+                                    </button>
+                                    <span>뒤로가기</span>
+                                </div>
+                                <article id="html" class="detail-content">
+                                    <div class="detail-title">
+                                        <img src="./img/skill/html.png" alt="HTML">
+                                        <h3>HTML</h3>
+                                    </div>
+                                    <div class="detail-point">
+                                        <div class="skill-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>우수</span>
+                                        </div>
+                                        <ul class="detail-box">
+                                            <li>웹 표준을 준수하는 HTML 구조설계</li>
+                                            <li>시맨틱 태그를 사용하여 작성</li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <article id="css" class="detail-content">
+                                    <div class="detail-title">
+                                        <img src="./img/skill/css.png" alt="CSS">
+                                        <h3>CSS</h3>
+                                    </div>
+                                    <div class="detail-point">
+                                        <div class="skill-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>우수</span>
+                                        </div>
+                                        <ul class="detail-box">
+                                            <li>미디어 쿼리를 통해 반응형 웹 제작</li>
+                                            <li>Bootstrap 가능</li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <article id="js" class="detail-content">
+                                    <div class="detail-title">
+                                        <img src="./img/skill/js.png" alt="JS">
+                                        <h3>Java<br>Script</h3>
+                                    </div>
+                                    <div class="detail-point">
+                                        <div class="skill-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>약간 우수</span>
+                                        </div>
+                                        <ul class="detail-box">
+                                            <li>이벤트 메소드를 사용해 기능 구현</li>
+                                            <li>jQuery, 플러그인 활용 가능</li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="skill-list">
+                            <h2 class="skill-title">Backend</h2>
+                            <ul>
+                                <li class="skill-img" data-tab="detail-2">
+                                    <img src="./img/skill/java.png" alt="Java">
+                                    <span>Java</span>
+                                </li>
+                                <li class="skill-img" data-tab="detail-2">
+                                    <img src="./img/skill/db.png" alt="Database">
+                                    <span>Database</span>
+                                </li>
+                            </ul>
+                            <div id="detail-2" class="skill-detail">
+                                <div class="detail-back">
+                                    <button class="back-btn">
+                                        <i class="fa-solid fa-rotate-left"></i>
+                                    </button>
+                                    <span>뒤로가기</span>
+                                </div>
+                                <article id="java" class="detail-content">
+                                    <div class="detail-title">
+                                        <img src="./img/skill/java.png" alt="Java">
+                                        <h3>Java</h3>
+                                    </div>
+                                    <div class="detail-point">
+                                        <div class="skill-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>약간 미흡</span>
+                                        </div>
+                                        <ul class="detail-box">
+                                            <li>JSP 기본 문법 활용 가능</li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <article id="db" class="detail-content">
+                                    <div class="detail-title">
+                                        <img src="./img/skill/db.png" alt="Database">
+                                        <h3>Database</h3>
+                                    </div>
+                                    <div class="detail-point">
+                                        <div class="skill-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>보통</span>
+                                        </div>
+                                        <ul class="detail-box">
+                                            <li>SQL Developer, MySQL</li>
+                                            <li>DDL, DCL, DML 구별 및 사용 가능</li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="skill-list">
+                            <h2 class="skill-title">etc.</h2>
+                            <ul>
+                                <li class="skill-img" data-tab="detail-3">
+                                    <img src="./img/skill/ps.png" alt="Photoshop">
+                                    <span>Photoshop</span>
+                                </li>
+                                <li class="skill-img" data-tab="detail-3">
+                                    <img src="./img/skill/pr.png" alt="PremierePro">
+                                    <span>PremierePro</span>
+                                </li>
+                                <li class="skill-img" data-tab="detail-3">
+                                    <img src="./img/skill/git.png" alt="Git">
+                                    <span>Git</span>
+                                </li>
+                            </ul>
+                            <div id="detail-3" class="skill-detail">
+                                <div class="detail-back">
+                                    <button class="back-btn">
+                                        <i class="fa-solid fa-rotate-left"></i>
+                                    </button>
+                                    <span>뒤로가기</span>
+                                </div>
+                                <article id="ps" class="detail-content">
+                                    <div class="detail-title">
+                                        <img src="./img/skill/ps.png" alt="Photoshop">
+                                        <h3>Photoshop</h3>
+                                    </div>
+                                    <div class="detail-point">
+                                        <div class="skill-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>약간 우수</span>
+                                        </div>
+                                        <ul class="detail-box">
+                                            <li>이미지 보정 및 편집 작업 가능</li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <article id="pr" class="detail-content">
+                                    <div class="detail-title">
+                                        <img src="./img/skill/pr.png" alt="PremierePro">
+                                        <h3>Premiere<br>Pro</h3>
+                                    </div>
+                                    <div class="detail-point">
+                                        <div class="skill-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>보통</span>
+                                        </div>
+                                        <ul class="detail-box">
+                                            <li>기본적인 영상 편집 가능</li>
+                                            <li>컷편집, 자막, 효과, 트랜지션 등</li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <article id="git" class="detail-content">
+                                    <div class="detail-title">
+                                        <img src="./img/skill/git.png" alt="Git">
+                                        <h3>Git</h3>
+                                    </div>
+                                    <div class="detail-point">
+                                        <div class="skill-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>보통</span>
+                                        </div>
+                                        <ul class="detail-box">
+                                            <li>팀 프로젝트 협업 경험 있음</li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explain">
+                        <span><i class="fa-solid fa-lightbulb"></i>&nbsp;스킬 아이콘을 클릭해주세요.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="project-screen" class="screen">
+            <div class="screen-title">
+                <div class="title-group">
+                    <img src="./img/project_img.png" alt="project-img">
+                    <span class="title-text">프로젝트</span>
+                </div>
+                <div class="btn-group">
+                    <button id="project-min" class="screen-btn">
+                        <i class="fa-regular fa-window-minimize"></i>
+                    </button>
+                    <button id="project-max" class="screen-btn btn-disabled">
+                        <i class="fa-regular fa-window-maximize"></i>
+                    </button>
+                    <button id="project-close" class="screen-btn close-btn">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="screen-frame">
+                <div class="screen-menu">
+                    <ul class="menu-list">
+                        <li>파일(<span>F</span>)</li>
+                        <li>편집(<span>E</span>)</li>
+                        <li>보기(<span>V</span>)</li>
+                        <li>즐겨찾기(<span>A</span>)</li>
+                        <li>도구(<span>T</span>)</li>
+                        <li>도움말(<span>H</span>)</li>
+                    </ul>
+                </div>
+                <div class="screen-main">
+                    <ul class="project-list">
+                        <li id="burger-king" class="project-icon">
+                            <img src="./img/project/burgerKing.png" class="project-img" alt="burger-king">
+                            <span class="img-text">버거킹</span>
+                            <div id="burger-king-box" class="sample-box">
+                                <article class="sample-content">
+                                    <div class="burger-king-view">
+                                        <img src="./img/project/device/desktop.png" id="desktop" class="device"
+                                            alt="desktop">
+                                        <img src="./img/project/screen/burgerKing.jpg" class="burger-king-img gif-img"
+                                            alt="burger-king">
+                                    </div>
+                                    <div class="project-text">
+                                        <div class="text-tilte">
+                                            <h3>버거킹</h3>
+                                            <h4>리뉴얼 사이트</h4>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <strong>최적화</strong>
+                                                <span>PC</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작 인원</strong>
+                                                <span>1명</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작 기간</strong>
+                                                <span>5일</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작 영역</strong>
+                                                <span>메인, 로그인</span>
+                                            </li>
+                                        </ul>
+                                        <div class="project-btn-group">
+                                            <a href="./subpage1.html" target="_blank" class="project-btn">상세보기</a>
+                                            <a href="https://github.com/hyunwoo1998/Burger-King-Renewal" target="_blank"
+                                                class="project-btn">코드</a>
+                                            <a href="https://hyunwoo1998.github.io/Burger-King-Renewal/index.html"
+                                                target="_blank" class="project-btn">사이트</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </li>
+                        <li id="melon" class="project-icon">
+                            <img src="./img/project/melon.png" class="project-img" alt="melon">
+                            <span class="img-text">멜론</span>
+                            <div id="melon-box" class="sample-box">
+                                <article class="sample-content">
+                                    <div class="melon-view">
+                                        <img src="./img/project/device/tablet.png" id="tablet" class="device"
+                                            alt="tablet">
+                                        <img src="./img/project/screen/melon.jpg" class="melon-img gif-img" alt="melon">
+                                    </div>
+                                    <div class="project-text">
+                                        <div class="text-tilte">
+                                            <h3>멜론</h3>
+                                            <h4>리뉴얼 사이트</h4>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <strong>최적화</strong>
+                                                <span>반응형</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작 인원</strong>
+                                                <span>1명</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작 기간</strong>
+                                                <span>7일</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작 영역</strong>
+                                                <span>메인, 앨범 정보</span>
+                                            </li>
+                                        </ul>
+                                        <div class="project-btn-group">
+                                            <a href="./subpage2.html" target="_blank" class="project-btn">상세보기</a>
+                                            <a href="https://github.com/hyunwoo1998/Melon-Renewal" target="_blank"
+                                                class="project-btn">코드</a>
+                                            <a href="https://hyunwoo1998.github.io/Melon-Renewal/index.html"
+                                                target="_blank" class="project-btn">사이트</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </li>
+                        <li id="quiz-cat" class="project-icon">
+                            <img src="./img/project/quizCat.png" class="project-img" alt="quiz-cat">
+                            <span class="img-text">퀴즈캣</span>
+                            <div id="quiz-cat-box" class="sample-box">
+                                <article class="sample-content">
+                                    <div class="quiz-cat-view">
+                                        <img src="./img/project/device/desktop.png" id="desktop" class="device"
+                                            alt="desktop">
+                                        <img src="./img/project/screen/quizCat.gif" class="quiz-cat-img gif-img"
+                                            alt="quiz-cat">
+                                    </div>
+                                    <div class="project-text">
+                                        <div class="text-tilte">
+                                            <h3>퀴즈캣</h3>
+                                            <h4>오리지널 사이트</h4>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <strong>최적화</strong>
+                                                <span>PC</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작 인원</strong>
+                                                <span>7명</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작 기간</strong>
+                                                <span>16일</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작 영역</strong>
+                                                <span>전체</span>
+                                            </li>
+                                        </ul>
+                                        <div class="project-btn-group">
+                                            <a href="./subpage3.html" target="_blank" class="project-btn">상세보기</a>
+                                            <a href="https://github.com/hyunwoo1998/Portfolio-Project" target="_blank"
+                                                class="project-btn">코드</a>
+                                            <a href="./resources/quizCat.pdf" target="_blank"
+                                                class="project-btn">PDF</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </li>
+                        <li id="paris-baguette" class="project-icon">
+                            <img src="./img/project/parisBaguette.png" class="project-img" alt="paris-baguette">
+                            <span class="img-text">파리바게뜨</span>
+                            <div id="paris-baguette-box" class="sample-box">
+                                <article class="sample-content">
+                                    <div class="paris-baguette-view">
+                                        <img src="./img/project/device/tablet.png" id="tablet" class="device"
+                                            alt="tablet">
+                                        <img src="./img/project/screen/parisBaguette.jpg"
+                                            class="paris-baguette-img gif-img" alt="paris-baguette">
+                                    </div>
+                                    <div class="project-text">
+                                        <div class="text-tilte">
+                                            <h3>파리바게뜨</h3>
+                                            <h4>리뉴얼 사이트</h4>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <strong>최적화</strong>
+                                                <span>반응형</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작 인원</strong>
+                                                <span>1명</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작 기간</strong>
+                                                <span>4일</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작 영역</strong>
+                                                <span>메인</span>
+                                            </li>
+                                        </ul>
+                                        <div class="project-btn-group">
+                                            <a href="./subpage4.html" target="_blank" class="project-btn">상세보기</a>
+                                            <a href="https://github.com/hyunwoo1998/Paris-Baguette-Renewal"
+                                                target="_blank" class="project-btn">코드</a>
+                                            <a href="https://hyunwoo1998.github.io/Paris-Baguette-Renewal/index.html"
+                                                target="_blank" class="project-btn">사이트</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </li>
+                        <li id="kspo" class="project-icon">
+                            <img src="./img/project/kspo.png" class="project-img" alt="kspo">
+                            <span class="img-text">국민체육진흥공단</span>
+                            <div id="kspo-box" class="sample-box">
+                                <article class="sample-content">
+                                    <div class="kspo-view">
+                                        <img src="./img/project/device/desktop.png" id="desktop" class="device"
+                                            alt="desktop">
+                                        <img src="./img/project/screen/kspo.jpg" class="kspo-img gif-img" alt="kspo">
+                                    </div>
+                                    <div class="project-text">
+                                        <div class="text-tilte">
+                                            <h3>국민체육진흥공단</h3>
+                                            <h4>클론 코딩 사이트</h4>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <strong>최적화</strong>
+                                                <span>PC</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작 인원</strong>
+                                                <span>1명</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작 기간</strong>
+                                                <span>3일</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작 영역</strong>
+                                                <span>메인</span>
+                                            </li>
+                                        </ul>
+                                        <div class="project-btn-group">
+                                            <a href="./subpage5.html" target="_blank" class="project-btn">상세보기</a>
+                                            <a href="https://github.com/hyunwoo1998/KSPO-Clone" target="_blank"
+                                                class="project-btn">코드</a>
+                                            <a href="https://hyunwoo1998.github.io/KSPO-Clone/index.html"
+                                                target="_blank" class="project-btn">사이트</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </li>
+                        <li id="paik-hospital" class="project-icon">
+                            <img src="./img/project/paikHospital.png" class="project-img" alt="paik-hospital">
+                            <span class="img-text">인제대학교백병원</span>
+                            <div id="paik-hospital-box" class="sample-box">
+                                <article class="sample-content">
+                                    <div class="paik-hospital-view">
+                                        <img src="./img/project/device/tablet.png" id="tablet" class="device"
+                                            alt="tablet">
+                                        <img src="./img/project/screen/paikHospital.jpg"
+                                            class="paik-hospital-img gif-img" alt="paik-hospital">
+                                    </div>
+                                    <div class="project-text">
+                                        <div class="text-tilte">
+                                            <h3>인제대학교백병원</h3>
+                                            <h4>리뉴얼 사이트</h4>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <strong>최적화</strong>
+                                                <span>반응형</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작 인원</strong>
+                                                <span>1명</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작 기간</strong>
+                                                <span>3일</span>
+                                            </li>
+                                            <li>
+                                                <strong>제작 영역</strong>
+                                                <span>메인</span>
+                                            </li>
+                                        </ul>
+                                        <div class="project-btn-group">
+                                            <a href="./subpage6.html" target="_blank" class="project-btn">상세보기</a>
+                                            <a href="https://github.com/hyunwoo1998/Paik-Hospital-Renewal"
+                                                target="_blank" class="project-btn">코드</a>
+                                            <a href="https://hyunwoo1998.github.io/Paik-Hospital-Renewal/index.html"
+                                                target="_blank" class="project-btn">사이트</a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="explain">
+                        <span><i class="fa-solid fa-lightbulb"></i>&nbsp;프로젝트 폴더를 클릭해주세요.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="f-start" class="f-common">
+            <button id="start">
+                <img src="./img/icon.png" class="start-icon" alt="start-icon">
+                <span>시작</span>
+            </button>
+            <div id="start-menu">
+
+                <div class="start-title">
+                    <i class="fa-solid fa-user-tie user-img"></i>
+                    <span class="user-name">김현우</span>
+                </div>
+
+                <div class="start-frame">
+                    <ul class="start-main">
+                        <li>
+                            <img src="./img/start/vscode.png" alt="vscode">
+                            <span>Visual Studio Code</span>
+                        </li>
+                        <li>
+                            <img src="./img/start/eclipse.png" alt="eclipse">
+                            <span>Eclipse</span>
+                        </li>
+                        <li>
+                            <img src="./img/start/github.png" alt="github">
+                            <span>GitHub</span>
+                        </li>
+                        <li>
+                            <img src="./img/start/developer.png" alt="developer">
+                            <span>SQL Developer</span>
+                        </li>
+                        <li>
+                            <img src="./img/start/mysql.png" alt="mysql">
+                            <span>MySQL</span>
+                        </li>
+                        <li>
+                            <img src="./img/start/ps.png" alt="ps">
+                            <span>Photoshop</span>
+                        </li>
+                        <li>
+                            <img src="./img/start/pr.png" alt="pr">
+                            <span>Premiere Pro</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="start-btn">
+                    <button id="portfolio-off">
+                        <i class="fa-solid fa-power-off"></i>
+                    </button>
+                    <a class="off-text">포트폴리오 닫기</a>
+                </div>
+            </div>
+        </div>
+        <div id="f-center" class="f-common">
+            <button id="project-btn" class="menu-common">
+                <img src="./img/project_img.png" alt="project_img">
+                <span>프로젝트</span>
+            </button>
+            <button id="skill-btn" class="menu-common">
+                <img src="./img/skill_img.png" alt="skill-img">
+                <span>스킬</span>
+            </button>
+        </div>
+        <div id="f-end" class="f-common">
+            <div class="notice">
+                <i class="fa-solid fa-exclamation notice-icon"></i>
+                <div class="notice-box">
+                    <div class="notice-text">
+                        <button id="notice-close">
+                            <i class="fa-solid fa-x"></i>
+                        </button>
+                        <h2><i class="fa-solid fa-exclamation notice-icon"></i>README</h2>
+                        <h3>본 사이트는 상업적 목적이 아닌<br>개인 포트폴리오 사이트입니다.</h3>
+                    </div>
+                </div>
+            </div>
+            <span id="f-time"></span>
+        </div>
+    </footer>
+    <article id="exit">
+        <div class="bg-gray"></div>
+        <div class="exit-screen">
+            <div class="exit-title">
+                <h2>포트폴리오 종료</h2>
+                <img src="./img/icon.png" alt="exit-icon">
+            </div>
+            <ul class="exit-group">
+                <li class="exit-btn">
+                    <button id="portfolio-refresh" class="exit-btn-common">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                    </button>
+                    <span class="exit-btn-text">새로고침</span>
+                </li>
+                <li class="exit-btn">
+                    <button id="portfolio-exit" class="exit-btn-common">
+                        <i class="fa-solid fa-power-off"></i>
+                    </button>
+                    <span class="exit-btn-text">종료</span>
+                </li>
+                <li class="exit-btn">
+                    <button id="portfolio-reopen" class="exit-btn-common">
+                        <i class="fa-solid fa-spinner"></i>
+                    </button>
+                    <span class="exit-btn-text">다시 열기</span>
+                </li>
+            </ul>
+            <div class="exit-cancel">
+                <button id="cancel-btn">취소</button>
+            </div>
+        </div>
+    </article>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

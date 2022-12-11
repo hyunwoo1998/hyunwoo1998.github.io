@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/* Noto Sans KR */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+:root {
+    --blue: #0056e6;
+    --sky-blue :#3d8ae7;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: .03rem;
+}
+
+a,
+button {
+    font-family: 'Noto Sans KR', sans-serif;
+    cursor: pointer;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+strong {
+    font-weight: 700;
+}
