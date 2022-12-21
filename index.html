@@ -32,15 +32,15 @@
     <main>
         <div id="intro">
             <div class="intro-box">
-                <span class="intro-text">
+                <p class="intro-text">
                     제 포트폴리오를 보러 와주셔서 감사합니다!<br>
                     본 사이트는 <strong>Windows XP</strong>를 참고해서 만든<br>
                     개인 포트폴리오용 사이트입니다.<br>
-                    대부분의 클릭 이벤트는 구현되어있으며,<br>
-                    바탕화면 아이콘이나 클릭 후의 창은<br>
-                    jQuery가 적용되어서 드래그가 가능합니다.<br>
+                    대부분의 클릭 기능이 구현되어있으며,<br>
+                    바탕화면 아이콘이나 클릭 후의 창에는<br>
+                    드래그도 가능하도록 구현되어있습니다.<br>
                     느긋하게 감상해주세요!
-                </span>
+                </p>
             </div>
             <img src="./img/dog_img.png" id="intro-dog" alt="dog">
         </div>
@@ -84,7 +84,7 @@
                 <div class="screen-main">
                     <div class="skill-content">
                         <div class="skill-list">
-                            <h2 class="skill-title">HTML·CSS·JS</h2>
+                            <h2 class="skill-title">Publishing</h2>
                             <ul>
                                 <li class="skill-img" data-tab="detail-1">
                                     <img src="./img/skill/html.png" alt="HTML">
@@ -169,18 +169,105 @@
                             </div>
                         </div>
                         <div class="skill-list">
-                            <h2 class="skill-title">Backend</h2>
+                            <h2 class="skill-title">Design</h2>
                             <ul>
                                 <li class="skill-img" data-tab="detail-2">
-                                    <img src="./img/skill/java.png" alt="Java">
-                                    <span>Java</span>
+                                    <img src="./img/skill/ps.png" alt="Photoshop">
+                                    <span>Photoshop</span>
                                 </li>
                                 <li class="skill-img" data-tab="detail-2">
-                                    <img src="./img/skill/db.png" alt="Database">
-                                    <span>Database</span>
+                                    <img src="./img/skill/pr.png" alt="PremierePro">
+                                    <span>Premiere Pro</span>
+                                </li>
+                                <li class="skill-img" data-tab="detail-2">
+                                    <img src="./img/skill/xd.png" alt="Xd">
+                                    <span>XD</span>
                                 </li>
                             </ul>
                             <div id="detail-2" class="skill-detail">
+                                <div class="detail-back">
+                                    <button class="back-btn">
+                                        <i class="fa-solid fa-rotate-left"></i>
+                                    </button>
+                                    <span>뒤로가기</span>
+                                </div>
+                                <article id="ps" class="detail-content">
+                                    <div class="detail-title">
+                                        <img src="./img/skill/ps.png" alt="Photoshop">
+                                        <h3>Photoshop</h3>
+                                    </div>
+                                    <div class="detail-point">
+                                        <div class="skill-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>우수</span>
+                                        </div>
+                                        <ul class="detail-box">
+                                            <li>이미지 보정 및 편집 작업 가능</li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <article id="pr" class="detail-content">
+                                    <div class="detail-title">
+                                        <img src="./img/skill/pr.png" alt="PremierePro">
+                                        <h3>Premiere<br>Pro</h3>
+                                    </div>
+                                    <div class="detail-point">
+                                        <div class="skill-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>보통</span>
+                                        </div>
+                                        <ul class="detail-box">
+                                            <li>기본적인 영상 편집 가능</li>
+                                            <li>컷편집, 자막, 효과, 트랜지션 등</li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <article id="xd" class="detail-content">
+                                    <div class="detail-title">
+                                        <img src="./img/skill/xd.png" alt="Xd">
+                                        <h3>XD</h3>
+                                    </div>
+                                    <div class="detail-point">
+                                        <div class="skill-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <span>보통</span>
+                                        </div>
+                                        <ul class="detail-box">
+                                            <li>기본적인 툴 사용 가능</li>
+                                        </ul>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="skill-list">
+                            <h2 class="skill-title">Backend + Git</h2>
+                            <ul>
+                                <li class="skill-img" data-tab="detail-3">
+                                    <img src="./img/skill/java.png" alt="Java">
+                                    <span>Java</span>
+                                </li>
+                                <li class="skill-img" data-tab="detail-3">
+                                    <img src="./img/skill/db.png" alt="Database">
+                                    <span>Database</span>
+                                </li>
+                                <li class="skill-img" data-tab="detail-3">
+                                    <img src="./img/skill/git.png" alt="Git">
+                                    <span>Git</span>
+                                </li>
+                            </ul>
+                            <div id="detail-3" class="skill-detail">
                                 <div class="detail-back">
                                     <button class="back-btn">
                                         <i class="fa-solid fa-rotate-left"></i>
@@ -223,70 +310,6 @@
                                         <ul class="detail-box">
                                             <li>SQL Developer, MySQL</li>
                                             <li>DDL, DCL, DML 구별 및 사용 가능</li>
-                                        </ul>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                        <div class="skill-list">
-                            <h2 class="skill-title">etc.</h2>
-                            <ul>
-                                <li class="skill-img" data-tab="detail-3">
-                                    <img src="./img/skill/ps.png" alt="Photoshop">
-                                    <span>Photoshop</span>
-                                </li>
-                                <li class="skill-img" data-tab="detail-3">
-                                    <img src="./img/skill/pr.png" alt="PremierePro">
-                                    <span>PremierePro</span>
-                                </li>
-                                <li class="skill-img" data-tab="detail-3">
-                                    <img src="./img/skill/git.png" alt="Git">
-                                    <span>Git</span>
-                                </li>
-                            </ul>
-                            <div id="detail-3" class="skill-detail">
-                                <div class="detail-back">
-                                    <button class="back-btn">
-                                        <i class="fa-solid fa-rotate-left"></i>
-                                    </button>
-                                    <span>뒤로가기</span>
-                                </div>
-                                <article id="ps" class="detail-content">
-                                    <div class="detail-title">
-                                        <img src="./img/skill/ps.png" alt="Photoshop">
-                                        <h3>Photoshop</h3>
-                                    </div>
-                                    <div class="detail-point">
-                                        <div class="skill-star">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star-half-stroke"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                            <span>약간 우수</span>
-                                        </div>
-                                        <ul class="detail-box">
-                                            <li>이미지 보정 및 편집 작업 가능</li>
-                                        </ul>
-                                    </div>
-                                </article>
-                                <article id="pr" class="detail-content">
-                                    <div class="detail-title">
-                                        <img src="./img/skill/pr.png" alt="PremierePro">
-                                        <h3>Premiere<br>Pro</h3>
-                                    </div>
-                                    <div class="detail-point">
-                                        <div class="skill-star">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                            <span>보통</span>
-                                        </div>
-                                        <ul class="detail-box">
-                                            <li>기본적인 영상 편집 가능</li>
-                                            <li>컷편집, 자막, 효과, 트랜지션 등</li>
                                         </ul>
                                     </div>
                                 </article>
@@ -662,11 +685,15 @@
                         </li>
                         <li>
                             <img src="./img/start/ps.png" alt="ps">
-                            <span>Photoshop</span>
+                            <span>Adobe Photoshop</span>
                         </li>
                         <li>
                             <img src="./img/start/pr.png" alt="pr">
-                            <span>Premiere Pro</span>
+                            <span>Adobe Premiere Pro</span>
+                        </li>
+                        <li>
+                            <img src="./img/start/xd.png" alt="xd">
+                            <span>Adobe XD</span>
                         </li>
                     </ul>
                 </div>
