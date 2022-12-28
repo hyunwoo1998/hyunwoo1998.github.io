@@ -798,38 +798,9 @@ body {
     justify-content: space-around;
 }
 
-.burger-king-view {
+.project-view {
     position: relative;
     top: 3rem;
-}
-
-.melon-view {
-    position: relative;
-    top: 2rem;
-    right: .2rem;
-}
-
-.quiz-cat-view {
-    position: relative;
-    top: 3rem;
-    right: 0;
-}
-
-.paris-baguette-view {
-    position: relative;
-    top: 2rem;
-    right: .6rem;
-}
-
-.kspo-view {
-    position: relative;
-    top: 3rem;
-}
-
-.paik-hospital-view {
-    position: relative;
-    top: 2rem;
-    right: .6rem;
 }
 
 #desktop {
@@ -839,53 +810,11 @@ body {
     z-index: 1;
 }
 
-#tablet {
-    position: absolute;
-    top: 2rem;
-    width: 28rem;
-    z-index: 1;
-}
-
-.burger-king-img {
-    position: relative;
-    top: 1rem;
-    left: 1rem;
-    width: 26rem;
-}
-
-.melon-img {
-    position: relative;
-    top: 3.7rem;
-    left: 1rem;
-    width: 26rem;
-}
-
-.quiz-cat-img {
+.screen-view {
     position: relative;
     top: 1.2rem;
     left: 1rem;
     width: 26rem;
-}
-
-.paris-baguette-img {
-    position: relative;
-    top: 3.8rem;
-    left: 1.8rem;
-    width: 24.5rem;
-}
-
-.kspo-img {
-    position: relative;
-    top: 1rem;
-    left: 1rem;
-    width: 26rem;
-}
-
-.paik-hospital-img {
-    position: relative;
-    top: 4rem;
-    left: 1.8rem;
-    width: 24.5rem;
 }
 
 .project-text {
@@ -894,15 +823,7 @@ body {
     width: 23rem;
 }
 
-#paris-baguette .project-text {
-    right: -3.5px;
-}
-
-#paik-hospital .project-text {
-    right: -3.5px;
-}
-
-.text-tilte {
+.text-title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -911,12 +832,12 @@ body {
     font-weight: 700;
 }
 
-.text-tilte>h3 {
+.text-title>h3 {
     font-size: 2.4rem;
     letter-spacing: .2rem;
 }
 
-.text-tilte>h4 {
+.text-title>h4 {
     margin-top: .8rem;
     font-size: 1.8rem;
     opacity: .6;
